@@ -1,0 +1,22 @@
+{
+  "name": "my--cli",
+  "version": "1.0.0",
+  "description": "Quickly organize,tree view A Directory",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "fileorganizer",
+    "organize-files",
+    "tree view files",
+    "my--cli",
+    "cli tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
+}
