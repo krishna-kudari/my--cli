@@ -14,9 +14,17 @@
     "my--cli",
     "cli tools"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Krishna k",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KRISHNAGK9964/my--cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KRISHNAGK9964/my--cli/issues"
+  },
+  "homepage": "https://github.com/KRISHNAGK9964/my--cli#readme"
 }
