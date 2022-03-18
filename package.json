@@ -17,6 +17,7 @@
   "author": "Krishna k",
   "license": "MIT",
   "dependencies": {
+    "@krishna_g_k/my--cli": "^1.0.0",
     "inquirer": "^8.2.1"
   },
   "repository": {
