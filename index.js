@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const main=require('./main');
 let helpFunc=require('./commands/help.js');
 let organizepublic=require('./commands/organize');
+let tree = require('./commands/tree');
 inquirer
   .prompt([
     /* Pass your questions in here */
@@ -26,6 +27,15 @@ inquirer
           .then((answers) => {
             organizepublic.organizepublic(answers.Dirpath);
           })
+    }else if(answers.command == 'tree') {
+      inquirer
+      .prompt([
+          /* Pass your questions in here */
+          {type: 'default',message:"Enter the path of Directory:", name: "Dirpath"  }
+        ])
+        .then((answers) => {
+          tree.tree(answers.Dirpath);
+        })
     }
   })
   .catch((error) => {

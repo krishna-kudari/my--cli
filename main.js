@@ -6,13 +6,13 @@ let input=process.argv.slice(2);
 let command=input[0];
 let path=input[1];
 let helpFunc=require('./commands/help.js');
-
+let tree = require('./commands/tree');
 let organizepublic=require('./commands/organize');
 exports.writehtml5public=organizepublic.organizepublic;
 switch (command) {
     case 'tree':
         // function tree()
-
+        tree.tree(path);
         break;
     case 'organize':
         // function organize()

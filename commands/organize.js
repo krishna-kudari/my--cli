@@ -11,6 +11,7 @@ let types = {
 // let srcPath='C:/Users/k/Desktop/mycli/downloads';
 function organize(srcPath){
     // srcPath=srcPath.replace(/\\/g,"/");
+
     if(srcPath==undefined){
         srcPath=process.cwd();
         console.log(srcPath);
@@ -48,7 +49,9 @@ function organize(srcPath){
             // console.log(ext);
             let folderName = getFolderName(ext);
             // console.log(folderName);
-
+            if(folderName==undefined){
+                continue;
+            }
             copyFileToDest(srcPath,fullPath,folderName);
         }
 
