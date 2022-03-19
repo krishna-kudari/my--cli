@@ -1,6 +1,6 @@
 {
   "name": "@krishna_g_k/my--cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Quickly organize,tree view A Directory",
   "main": "index.js",
   "bin": "index.js",
